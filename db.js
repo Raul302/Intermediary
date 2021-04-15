@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
-const pool =mysql.createPool({
+const pool =mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    port:3306,
+    port:33060,
     database: 'dbApi'
     // host: process.env.DB_HOST,
     // user: process.env.DB_USER,
